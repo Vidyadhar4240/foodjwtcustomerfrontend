@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Oxygen, sans-serif;
+  margin: 2rem;
+  background-color: rgb(251, 217, 165);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+  gap: 2rem;
+  justify-content: left;
+  padding-top: 50px;
+}
+
+.myCard {
+  overflow: hidden;
+  box-shadow: 0 2px 20px #e1e5ee;
+  border-radius: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* cursor: pointer; */
+  /* transition: transform 200ms ease-in; */
+  background-color: rgb(244, 195, 96);
+}
+
+.card__image {
+  height: 12rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card__title {
+  padding: 1rem;
+}
+
+.card__description {
+  padding: 0 1rem;
+}
+.card__description2 {
+  padding: 0 1rem;
+}
+.card__description3 {
+  padding: 0 1rem;
+}
+
+  .myCard .card__body .cardBtn {
+    padding: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem;
+    border: 2px solid #d50000;
+    background: #ff0000;
+    color: #fefefe;
+    border-radius: 0.2rem;
+    align-items: center !important;
+  }
+
+  .myCard .card__body .cardBtn:hover {
+    z-index: 100;
+    background-color: #d90000 !important;
+    color: #f9f9fa;
+    opacity: 1;
+    cursor: pointer !important;
+  }
+
+  .orderlistButtonCenter {
+    display: flex;
+    justify-content: center;
+  }
+
+  .order-empty {
+    display: flex;
+    align-items: center !important;
+    text-align: center;
+    padding-top: 50px;
+    font-weight: bolder;
+    font-size: x-large;
+  }

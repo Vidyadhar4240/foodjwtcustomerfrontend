@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
+/*   color variables */
+/* $clr-primary: #d50000;
+$clr-primary-hover: #29e6a7;
+$clr-primary-dark: #039d69;
+$clr-gray100: #f9fbff;
+$clr-gray150: #f4f6fb;
+$clr-gray200: #eef1f6;
+$clr-gray300: #e1e5ee;
+$clr-gray400: #767b91;
+$clr-gray500: #4f546c;
+$clr-gray600: #2a324b;
+$clr-gray700: #161d34; */
+
+/*   border radius */
+/* $radius: 0.2rem; */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Oxygen, sans-serif;
+  margin: 2rem;
+  background-color: rgb(251, 217, 165);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 18rem));
+  gap: 2rem;
+  justify-content: left;
+  padding-top: 50px;
+}
+
+.myCard {
+  overflow: hidden;
+  box-shadow: 0 2px 20px #e1e5ee;
+  border-radius: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(244, 195, 96);
+}
+
+.card__image {
+  height: 12rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card__title {
+  padding: 1rem;
+  font-size: large;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.card__description {
+  padding: 0 1rem;
+}
+.card__description2 {
+  padding: 0 1rem;
+}
+.card__description3 {
+  padding: 0 1rem;
+}
+
+  .myCard .cardBtn {
+    padding: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem;
+    border: 2px solid #d50000;
+    background: #ff0000;
+    color: #fefefe;
+    border-radius: 0.2rem;
+  }
+
+  .myCard .cardBtn:hover {
+    z-index: 100;
+    background-color: #d90000 !important;
+    color: #f9f9fa;
+    opacity: 1;
+  }
+
+  .cardEat {
+    display: flex;
+    padding-left: 10px;
+    justify-content: flex-start;
+  }
+
+  .card__veg {
+    display:inline-block;
+    color:rgb(42, 135, 8) !important;
+    border:3px solid rgb(42, 135, 8);
+    border-radius: 0.25rem;
+    background:rgb(244, 195, 96);
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+    vertical-align:middle;
+    text-align: center;
+    margin-left: 10px;
+    padding: 0 5px;
+  }
+  .card__nonveg {
+    display:inline-block;
+    color:rgb(179, 4, 4) !important;
+    border-radius: 0.25rem;
+    border:3px solid rgb(179, 4, 4);
+    background:rgb(244, 195, 96);
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+    vertical-align:middle;
+    text-align: center;
+    margin-left: 10px;
+    padding: 0 5px;
+  }
+
+  .card__hide {
+    display: none;
+  }
+
+  .restaurantButtonCenter {
+    display: flex;
+    justify-content: center;
+  }

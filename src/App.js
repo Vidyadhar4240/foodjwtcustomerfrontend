@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { useEffect, useState } from 'react';
+import { UseLocalState } from './util/UseLocalStorage';
+import { Route, Routes } from 'react-router-dom';
 
-function App() {
+import Register from './register';
+import Login from './login';
+import Navbar from './header';
+import RestaurantList from './restaurantList';
+import MenuList from './menuList';
+import EditProfile from './edituser';
+import OrderList from './orderlist';
+
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route exact path="/login" element={<Login />} />
+      <Route exact path="/signup" element={<Register />}></Route>
+      <Route exact path="/listrestaurant" element={<RestaurantList {...props} />}></Route>
+      <Route exact path="/listmenu/:id" element={<MenuList />}></Route>
+      <Route exact path="/header" element={<Navbar />}></Route>
+      <Route exact path="/editprofile" element={<EditProfile />}></Route>
+      <Route exact path="/orderhistory" element={<OrderList />}></Route>
+    </Routes>
   );
 }
 

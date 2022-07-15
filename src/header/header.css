@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+*{
+    font-family:'Sora', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: aliceblue;
+    padding-block-start: 0.7cm;
+    padding-inline-end: 35cm;
+}
+
+.css-127aiox-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    color: aliceblue;
+}
+       
+.floatRightButton {
+    margin-left: auto;
+    display: flex !important;
+    justify-content: space-evenly !important;
+    align-items: center;
+    order: 2;
+}

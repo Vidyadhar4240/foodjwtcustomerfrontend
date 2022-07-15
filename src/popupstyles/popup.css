@@ -1,0 +1,39 @@
+
+.orderTitle {
+    background-color: rgb(0, 0, 118);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.orderItemTitle {
+    text-align: center;
+}
+.css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+    background-color: rgb(251, 217, 165) !important;
+}
+
+.orderMenu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.marginRight20 {
+    margin-right: 20px;
+}
+
+.marginRight40 {
+    margin-right: 40px;
+}
+.spaceBetweenParent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.marginTop10 {
+    margin-top: 10px;
+}
+
+.marginTop30 {
+    margin-top: 25px;
+}
